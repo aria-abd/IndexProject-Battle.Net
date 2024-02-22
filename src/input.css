@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { font-family: Object Sans; src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/blt60ae361444b7ab7b/ObjectSans-Bold.eot") format("embedded-opentype"), url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/blt4effa2419596f476/ObjectSans-Bold.woff") format("woff"), url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/blt6897d6ef04d2a035/ObjectSans-Bold.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
+
+@font-face { font-family: Noto Sans Bold; src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/blt84e47c58c9ac946b/NotoSans-Bold.ttf") format("truetype"); font-style: normal; font-weight: 700; font-display: swap; }
+
+@font-face { font-family: Noto Sans Regular; src: url("https://blz-contentstack-assets.akamaized.net/v3/assets/blt72f16e066f85e164/blt1e7ef8500ede2f96/NotoSans-Regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }

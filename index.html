@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">                                                                       
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle.net</title>
+    <link rel="stylesheet" href="./dist/css/Main.css">
+    <link rel="shortcut icon" href="./dist/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="top">
+
+        <!-- Mobile & Tablet Top Navbar -->
+        <section class="mobile_navbar flex justify-between items-center w-full h-14 bg-primary desktop:hidden mobile:flex">
+            <div class="menu">
+      
+              <!-- Sidenav -->
+              <nav
+                id="sidenav-6"
+                class="fixed left-0 top-0 z-[1035] h-screen w-60 -translate-x-full overflow-hidden bg-primary shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:translate-x-0 dark:bg-zinc-800"
+                data-te-sidenav-init
+                data-te-sidenav-hidden="true"
+                data-te-sidenav-accordion="true"
+              >
+                <ul
+                  class="relative m-0 list-none px-[0.2rem] "
+                  data-te-sidenav-menu-ref
+                >
+                  <li class="relative mt-6">
+                    <a
+                      class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear"
+                      data-te-sidenav-link-ref
+                    >                
+                      <img src="./dist/icons/Logo.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="relative">
+                    <a
+                      class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                      data-te-sidenav-link-ref
+                    >               
+                      <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Warcraft</span>
+                      <span
+                        class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                        data-te-sidenav-rotate-icon-ref
+                      >
+                      <img src="./dist/icons/Arrow-Down.svg" alt="">
+                      </span>
+                    </a>
+                    <ul
+                      class="!visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                      data-te-sidenav-collapse-ref
+                    >
+                      <li class="flex items-center h-16 pl-4 font-notobold rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/WOW.svg" alt=""><div><p class="font-notoregular text-gray-200">World of Warcraft</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                      <li class="flex items-center h-16 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/WOW-Classic.svg" alt=""><div><p class="font-notoregular text-gray-200">World of Warcraft Classic</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                      <li class="flex items-center h-16 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/W-Rumble.svg" alt=""><div><p class="font-notoregular text-gray-200">Warcraft Rumble</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                      <li class="flex items-center h-16 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/W-III.svg" alt=""><div><p class="font-notoregular text-gray-200">Warcraft III</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                      <li class="flex items-center h-16 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Heartstone.svg" alt=""><div><p class="font-notoregular text-gray-200">Heartstone</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                    </ul>
+                  </li>
+                  <li class="relative">
+                    <a
+                      class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear "
+                      data-te-sidenav-link-ref
+                    >               
+                      <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Call Of Duty</span>
+                      <span
+                        class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                        data-te-sidenav-rotate-icon-ref
+                      >
+                        <img src="./dist/icons/Arrow-Down.svg" alt="">
+                      </span>
+                    </a>
+                    <ul
+                      class="!visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                      data-te-sidenav-collapse-ref
+                    >
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/COD-ModernwarfareIII.svg" alt=""><div><p class="font-notoregular text-gray-200">Modern Warfare III</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Warzone.svg" alt=""><div><p class="font-notoregular text-gray-200">Warzone</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/COD-ModernwarfareII.svg" alt=""><div><p class="font-notoregular text-gray-200">Modern warfare II</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Vanguard.svg" alt=""><div><p class="font-notoregular text-gray-200">Vanguard</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/BO-Coldwar.svg" alt=""><div><p class="font-notoregular text-gray-200">Black ops cold war</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/COD-ModernwarfareI.svg" alt=""><div><p class="font-notoregular text-gray-200">Modern Warfare</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/COD-Modernwarfare2rR.svg" alt=""><div><p class="font-notoregular text-gray-200">Modern Warfare 2</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/BO4.svg" alt=""><div><p class="font-notoregular text-gray-200">Black ops 4</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                    </ul>
+                  </li>
+                  <li class="relative">
+                    <a
+                      class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                      data-te-sidenav-link-ref
+                    >
+                    <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Diablo</span>
+                      <span
+                        class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                        data-te-sidenav-rotate-icon-ref
+                      >
+                        <img src="./dist/icons/Arrow-Down.svg" alt="">
+                      </span>
+                    </a>
+                    <ul
+                      class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                      data-te-sidenav-collapse-ref
+                    >
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Diablo-IV.svg" alt=""><div><p class="font-notoregular text-gray-200">Diablo IV</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Diablo-Immortal.svg" alt=""><div><p class="font-notoregular text-gray-200">Diablo Immortal</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Diablo-III.svg" alt=""><div><p class="font-notoregular text-gray-200">Diablo III</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Diablo-II.svg" alt=""><div><p class="font-notoregular text-gray-200">Diablo II</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                    </ul>
+                  </li>
+                  <li class="relative">
+                    <a
+                      class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                      data-te-sidenav-link-ref
+                    >
+                    <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Overwatch</span>
+                      <span
+                        class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300"
+                      >
+                        
+                      </span>
+                      <span
+                        class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                        data-te-sidenav-rotate-icon-ref
+                      >
+                        <img src="./dist/icons/Arrow-Down.svg" alt="">
+                      </span>
+                    </a>
+                    <ul
+                      class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                      data-te-sidenav-collapse-ref
+                    >
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Overwatch2.svg" alt=""><div><p class="font-notoregular text-gray-200">Overwatch 2</p><p class="font-notoregular text-xs text-[#65696d]">Team-Based Action Game</p></div></a></li>
+                    </ul>
+                  </li>
+                  <li class="relative">
+                    <a
+                      class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                      data-te-sidenav-link-ref
+                    >
+                    <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Starcraft</span>               
+                      <span
+                        class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                        data-te-sidenav-rotate-icon-ref
+                      >
+                        <img src="./dist/icons/Arrow-Down.svg" alt="">
+                      </span>
+                    </a>
+                    <ul
+                      class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                      data-te-sidenav-collapse-ref
+                    >
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Starcraft2.svg" alt=""><div><p class="font-notoregular text-gray-200">Starcraft II</p><p class="font-notoregular text-xs text-[#65696d]">Real-Time Strategy</p></div></a></li>
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Starcraft1.svg" alt=""><div><p class="font-notoregular text-gray-200">Starcraft</p><p class="font-notoregular text-xs text-[#65696d]">Real-Time Strategy</p></div></a></li>
+                    </ul>
+                  </li>
+                  <li class="relative">
+                    <a
+                      class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                      data-te-sidenav-link-ref
+                    >
+                    <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Other</span>               
+                      <span
+                        class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                        data-te-sidenav-rotate-icon-ref
+                      >
+                        <img src="./dist/icons/Arrow-Down.svg" alt="">
+                      </span>
+                    </a>
+                    <ul
+                      class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block"
+                      data-te-sidenav-collapse-ref
+                    >
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Billizcon-col.svg" alt=""><div><p class="font-notoregular text-gray-200">BlizzCon Collection</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Billizard-Arcade.svg" alt=""><div><p class="font-notoregular text-gray-200">Blizzard Arcade Collection</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Crash-Bandicoot.svg" alt=""><div><p class="font-notoregular text-gray-200">Crash Bandicoot 4</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Heros.svg" alt=""><div><p class="font-notoregular text-gray-200">Heroes Of The Storm</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <hr class="my-4" />
+                <ul
+                  class="relative m-0 list-none px-[0.2rem]"
+                  data-te-sidenav-menu-ref
+                >
+                  <li class="relative">
+                  <a
+                    class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                    data-te-sidenav-link-ref
+                  >
+                    <span class="text-[#6cdb00] text-[17px] font-notoregular group-hover:text-white duration-200">Black Friday Sale</span>               
+                  </a>
+                  <li class="relative">
+                    <a
+                      class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none hover:bg-secondary transition duration-200 ease-linear"
+                      data-te-sidenav-link-ref
+                    >
+                    <span class="text-gray-300 text-[17px] font-notoregular group-hover:text-white duration-200">Battle.net Balance</span>               
+                      <span
+                        class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                        data-te-sidenav-rotate-icon-ref
+                      >
+                        <img src="./dist/icons/Arrow-Down.svg" alt="">
+                      </span>
+                    </a>
+                    <ul
+                      class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block bg-gray-950"
+                      data-te-sidenav-collapse-ref
+                    >
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2 w-full h-full group"><img class="w-6" src="./dist/icons/Add.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Add Balance</p></div></a></li>
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2  w-full h-full group"><img class="w-6" src="./dist/icons/Gift.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Gift Balance</p></div></a></li>
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2  w-full h-full group"><img class="w-6" src="./dist/icons/History.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Balance History</p></div></a></li>
+                      <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2  w-full h-full group"><img class="w-6" src="./dist/icons/Help.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Balance Help</p></div></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <!-- Sidenav -->
+      
+              <!-- Toggler -->
+              <button
+                class="inline-block h-8 w-8 rounded bg-primary px-2 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+                data-te-sidenav-toggle-ref
+                data-te-target="#sidenav-6"
+                aria-controls="#sidenav-6"
+                aria-haspopup="true"
+              >
+                <span class="block [&>svg]:h-7 [&>svg]:w-7 [&>svg]:text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-8 w-8"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <!-- Toggler -->
+      
+            </div>
+            <div class="logo">
+              <img class="w-[150px] h-12" src="./dist/icons/Logo.svg" alt="" />
+            </div>
+            <div class="account">
+      
+              <!-- Sidenav -->
+              <nav
+                id="sidenav-7"
+                class="fixed right-0 top-0 z-[1035] h-screen w-60 translate-x-full overflow-hidden bg-primary shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:-translate-x-0 dark:bg-zinc-800"
+                data-te-sidenav-init
+                data-te-sidenav-hidden="true"
+                data-te-sidenav-right="true"
+              >
+                <ul
+                  class="relative m-0 list-none px-[0.2rem]"
+                  data-te-sidenav-menu-ref
+                >
+                <li class="relative mt-6">
+                  <a
+                    class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear"
+                    data-te-sidenav-link-ref
+                  >                
+                    <img src="./dist/icons/Logo.svg" alt="">
+                  </a>
+                </li>
+                  <li class="relative">
+                    <div class="h-[288px] flex flex-col p-3">
+                      <button class="w-full h-12 bg-button text-lg font-notobold text-white my-4 mx-auto rounded-md hover:bg-blue-400 duration-300 ">Log In</button>  
+                      <a href="#"  class="flex justify-start items-center gap-2 h-12  rounded-md group hover:bg-gray-700 duration-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                              <path d="M11.675 13.771a6.488 6.488 0 0 0-.954 2.042 6.833 6.833 0 0 1-3.048-.864c-.335.163-.705.457-1.057.916-.094.123-.18.248-.257.375a6.97 6.97 0 0 0 4.159 1.744c.052.71.218 1.388.48 2.016a9 9 0 1 1 8.974-8.282A6.452 6.452 0 0 0 18 11.076V11a7 7 0 1 0-12.973 3.651c.762-.995 1.821-1.75 3.002-1.85.853.643 1.874 1.018 2.971 1.018.229 0 .454-.016.675-.048Z"></path><path d="M14.375 8.975a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0Zm-2 0a1.375 1.375 0 1 1-2.75 0 1.375 1.375 0 0 1 2.75 0ZM16.455 13h1.093a.5.5 0 0 1 .492.412l.167.936a.55.55 0 0 0 .288.381c.098.052.191.11.282.171a.55.55 0 0 0 .49.076l1.051-.368a.5.5 0 0 1 .59.209l.518.837a.5.5 0 0 1-.12.659l-.943.725a.55.55 0 0 0-.205.445v.058a.55.55 0 0 0 .205.445l.943.726a.5.5 0 0 1 .12.659l-.516.837a.5.5 0 0 1-.591.209l-1.053-.369a.55.55 0 0 0-.49.076c-.09.062-.184.119-.282.171a.55.55 0 0 0-.289.382l-.166.935a.5.5 0 0 1-.493.412h-1.093a.5.5 0 0 1-.492-.412l-.167-.935a.55.55 0 0 0-.288-.382 3.132 3.132 0 0 1-.282-.171.55.55 0 0 0-.49-.075l-1.05.367a.5.5 0 0 1-.591-.209l-.517-.837a.5.5 0 0 1 .12-.659l.94-.724a.55.55 0 0 0 .206-.445v-.06a.55.55 0 0 0-.205-.445l-.942-.725a.5.5 0 0 1-.12-.659l.517-.837a.5.5 0 0 1 .59-.21l1.052.37a.55.55 0 0 0 .49-.076c.09-.062.185-.12.283-.172a.55.55 0 0 0 .29-.382l.166-.934a.5.5 0 0 1 .492-.412ZM17 19.09a1.58 1.58 0 1 0 0-3.157 1.58 1.58 0 0 0 0 3.158Z"></path>
+                          </svg>
+                          <span class="text-gray-400 font-notoregular group-hover:text-white">Account Settings</span>
+                      </a>
+                      <a href="#"  class="flex justify-start items-center gap-2 h-12 rounded-md group hover:bg-gray-700 duration-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                              <path d="M10.55 20.03 12 21.35l1.45-1.31.04-.036C18.616 15.344 22 12.27 22 8.5 22 5.42 19.58 3 16.5 3c-1.116 0-2.204.745-3.128 1.617A18.606 18.606 0 0 0 12 6.09c-.39-.459-.856-.986-1.372-1.473C9.704 3.745 8.616 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.777 3.394 6.855 8.537 11.518l.013.012Zm1.557-1.472-.002.002-.1.09-.109-.099-.003-.003c-2.615-2.371-4.623-4.198-6.001-5.883C4.536 11.008 4 9.733 4 8.5 4 6.525 5.525 5 7.5 5c.197 0 .607.121 1.25.631.609.484 1.193 1.129 1.727 1.756L12 9.175l1.523-1.788c.534-.627 1.118-1.272 1.727-1.756.643-.51 1.053-.631 1.25-.631C18.475 5 20 6.525 20 8.5c0 1.233-.537 2.508-1.892 4.167-1.379 1.686-3.386 3.515-6 5.89Z"></path>
+                          </svg>
+                          </svg>
+                          <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Wish List</span>
+                      </a>
+                      <a href="#"  class="flex justify-start items-center gap-2 h-12 rounded-md group hover:bg-gray-700 duration-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                              <path d="M2 2h2v16H2V2Zm3 20v-2H3v2h2Zm4-2H7v2h2v-2Zm2 0h5v2h-5v-2Zm10 0h-3v2h3v-2Zm1-18h-3v16h3V2Zm-6 0h1v16h-1V2Zm-2 0h-2v16h2V2ZM6 2h4v16H6V2Z"></path>
+                          </svg>
+                          <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Redeem Code</span>
+                      </a>
+                      <a href="#" class="flex justify-start items-center gap-2 h-12 rounded-md group hover:bg-gray-700 duration-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                              <path d="M13.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H15v16h-1.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H17v-3h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3V4h1.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-5ZM17 9h3v6h-3V9ZM4 7h9v2H4v6h9v2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"></path>
+                          </svg>
+                          <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Change BattleTag</span>
+                      </a> 
+                    </div>
+                  <div class="w-full p-3 bottom-0 bg-secondary">
+                      <a href="#" class="flex justify-start items-center gap-2 h-12  rounded-md group hover:bg-gray-700 duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                          <path d="M11.104 8.068c-.13.046-.248.118-.527.364-.252.223-.456.591-.543 1.048-.052.27-.27.497-.546.497h-1c-.277 0-.503-.225-.474-.5.103-.955.504-1.895 1.24-2.544.323-.285.676-.57 1.179-.75.482-.171 1.018-.217 1.675-.217 1.407 0 3.022.477 3.67 2.047.624 1.509-.02 3.086-1.447 3.75-.128.06-.302.135-.454.202l-.253.112a3.31 3.31 0 0 0-.47.248.518.518 0 0 0-.15.132c-.003.005-.016.024-.016.09v.953a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-.952c0-.924.5-1.512 1.047-1.881.252-.17.524-.303.762-.411.136-.062.238-.106.335-.148.112-.049.216-.094.356-.159.463-.215.654-.66.442-1.173-.186-.451-.73-.81-1.822-.81-.594 0-.853.048-1.004.102ZM11 16.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Z"></path><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0Z"></path>
+                      </svg>                                    
+                        <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Support</span>
+                      </a>
+                      <a href="#" class="flex justify-start items-center gap-2 h-12  rounded-md group hover:bg-gray-700 duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="gray" class="w-6 h-6 group-hover:fill-white" class="w-6 h-6">
+                          <path d="M10.5 18.75a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" />
+                          <path fill-rule="evenodd" d="M8.625.75A3.375 3.375 0 005.25 4.125v15.75a3.375 3.375 0 003.375 3.375h6.75a3.375 3.375 0 003.375-3.375V4.125A3.375 3.375 0 0015.375.75h-6.75zM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 017.5 19.875V4.125z" clip-rule="evenodd" />
+                        </svg>                                    
+                        <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Battle.net Mobile App</span>
+                      </a>
+                      <a href="#" class="flex justify-start items-center gap-2 h-12  rounded-md group hover:bg-gray-700 duration-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                              <path d="M3.114 20.31 4 15 15.585 3.414a2 2 0 0 1 2.828 0l2.172 2.172a2 2 0 0 1 0 2.828L9 20l-5.31.885a.5.5 0 0 1-.575-.576Zm4.924-2.177 8.34-8.34-2.172-2.172-8.34 8.34-.434 2.606 2.606-.434Zm9.754-9.754L19.171 7l-2.172-2.172-1.378 1.38 2.171 2.17Z"></path>
+                          </svg>
+                          <span class="text-gray-400 font-notoregular group-hover:text-white duration-200">Create Account</span>
+                      </a>
+                  </div>
+                  </li>
+                  
+                </ul>
+              </nav>
+              <!-- Sidenav -->
+      
+              <!-- Toggler -->
+              <button
+                class="inline-block rounded bg-primary px-2 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+                data-te-sidenav-toggle-ref
+                data-te-target="#sidenav-7"
+                aria-controls="#sidenav-7"
+                aria-haspopup="true"
+              >
+                <span class="block [&>svg]:h-7 [&>svg]:w-7 [&>svg]:text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="w-6 h-6 " viewBox="0 0 24 24" part="icon blz-icon">
+                    <path d="M15.75 9.75a3.733 3.733 0 0 1-1.433 2.949A3.734 3.734 0 0 1 12 13.5a3.734 3.734 0 0 1-3.023-1.53 3.75 3.75 0 1 1 6.773-2.22Zm-5.5 0a1.75 1.75 0 1 0 3.5 0 1.75 1.75 0 0 0-3.5 0Z"></path><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.047-4.73c.148.193.28.393.393.595A7.972 7.972 0 0 1 12 20a7.972 7.972 0 0 1-5.445-2.139l.005.005c.114-.202.245-.403.393-.596.442-.575.92-.943 1.36-1.13a7.366 7.366 0 0 0 3.687.992c1.34 0 2.594-.364 3.687-.993.44.188.919.556 1.36 1.13Zm-8.835-3.194c-1.188.268-2.237 1.115-2.99 2.172H5.22a8 8 0 1 1 13.56 0c-.755-1.056-1.804-1.904-2.992-2.172a3.627 3.627 0 0 0-.487-.075c-.947.715-2.082 1.131-3.3 1.131-1.22 0-2.355-.416-3.302-1.131-.164.014-.327.04-.487.075Z"></path>
+                  </svg>
+                </span>
+              </button>
+              <!-- Toggler -->
+      
+            </div>
+        </section>
+        <!-- !Mobile & Tablet Top Navbar -->
+
+        <!-- Top Navbar -->
+        <section class="top_navbar relative flex justify-between items-center desktop:w-[85%] mobile:w-[98%] mx-auto desktop:flex mobile:hidden">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" aria-labelledby="blz-icon-title-battlenet-logo" viewBox="0 0 196 32" part="icon blz-icon" height="72px" width="200px">
+                    <title id="blz-icon-title-battlenet-logo">Battle.net</title><path fill="#148EFF" stroke="none" d="M26.193 11.848c.895-2.755 1.063-5.267.453-7.17l-.017-.054c-.037-.103-.128-.321-.243-.321-.088 0-.089.146-.084.22l.006.043c.194 1.7-.326 4.124-1.371 6.663-2.143-.973-4.717-1.75-7.573-2.208-2.566-.413-5.023-.504-7.25-.322.264-1.752.919-2.971 1.993-3.229 1.478-.353 3.09.619 4.627 2.388a34.717 34.717 0 0 1 3.032.552c-2.803-5.272-6.562-8.227-9.421-7.136-2.176.83-3.287 3.823-3.155 7.846-2.833.603-5.093 1.713-6.436 3.193l-.037.041c-.072.084-.215.272-.157.372.043.075.17.003.233-.038l.034-.026c1.375-1.018 3.735-1.78 6.456-2.145.229 2.343.843 4.96 1.873 7.662.926 2.429 2.076 4.602 3.348 6.44-1.65.648-3.034.69-3.793-.111-1.046-1.103-1.01-2.985-.246-5.202a34.626 34.626 0 0 1-1.038-2.901c-3.165 5.063-3.844 9.796-1.47 11.727 1.806 1.47 4.955.935 8.372-1.19 1.939 2.152 4.03 3.554 5.983 3.977l.055.012c.108.02.342.05.4-.05.044-.076-.082-.15-.149-.183a3.123 3.123 0 0 1-.04-.017c-1.569-.681-3.409-2.344-5.085-4.518 1.914-1.37 3.874-3.21 5.699-5.454 1.64-2.016 2.947-4.098 3.904-6.119 1.385 1.106 2.113 2.282 1.8 3.34-.433 1.458-2.08 2.368-4.382 2.814a34.57 34.57 0 0 1-1.994 2.35c5.967.21 10.405-1.57 10.89-4.59.37-2.3-1.667-4.759-5.217-6.656Zm-5.183 6.026c-2.104 2.587-4.727 4.789-7.06 6.062a26.423 26.423 0 0 1-2.248-4.496c-1.188-3.116-1.784-6.489-1.72-9.146a26.42 26.42 0 0 1 5.018.301c3.292.53 6.511 1.7 8.78 3.083a26.4 26.4 0 0 1-2.77 4.196Z"></path><path stroke="none" d="M75.328 22.603 68.972 9.915a1.858 1.858 0 0 0-1.638-1.002h-3.3c-.685 0-1.32.391-1.638 1.002l-6.307 12.688c-.123.22.048.489.293.489h2.836a.446.446 0 0 0 .415-.244l1.394-2.787h9.362l1.394 2.787c.073.17.22.244.415.244h2.836c.22 0 .367-.269.294-.489ZM62.42 17.249l2.64-5.304a.381.381 0 0 1 .318-.196h.66c.147 0 .269.073.318.195l2.64 5.305H62.42Zm133.256-7.994v2.152a.35.35 0 0 1-.343.342h-5.72v12.859a.24.24 0 0 1-.391.195l-2.836-2.42a.99.99 0 0 1-.342-.733v-9.901h-4.596a.696.696 0 0 1-.611-.391l-1.1-2.2c-.049-.123.024-.245.146-.245h15.401c.22 0 .392.171.392.342Zm-30.68 2.738v2.616h10.438a1.419 1.419 0 0 1 0 2.836h-10.438V19.4c0 .489.415.904.904.904h11.759a.35.35 0 0 1 .342.342V22.8a.368.368 0 0 1-.342.342h-12.712a3.625 3.625 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.368.368 0 0 1-.342.342h-12.443c-.147-.024-.22.074-.22.22Zm-6.747-2.64v12.443c0 1.492-1.736 2.323-2.909 1.345l-10.977-9.314v8.85c0 .244-.195.44-.44.44h-2.762c-.245 0-.465-.196-.465-.44v-12.42c0-1.49 1.736-2.322 2.909-1.344l10.977 9.314v-8.85c0-.244.195-.464.44-.464h2.762c.318 0 .465.22.465.44Zm-34.2 2.64v2.616h7.285a1.418 1.418 0 0 1 0 2.836h-7.261V19.4c0 .489.416.904.905.904h11.758a.35.35 0 0 1 .342.342V22.8a.35.35 0 0 1-.342.342h-12.712a3.626 3.626 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.35.35 0 0 1-.342.342h-12.443c-.147-.024-.244.074-.244.22Zm-5.183 8.605v2.152a.35.35 0 0 1-.342.342h-10.219a3.626 3.626 0 0 1-3.618-3.618V9.255a.35.35 0 0 1 .343-.342h3.006a.35.35 0 0 1 .343.342v10.097c0 .489.415.904.904.904h9.241c.22 0 .342.171.342.342ZM102.781 9.255v2.152a.35.35 0 0 1-.343.342h-5.329v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a1.002 1.002 0 0 1-.343-.757v-9.876H90.02a.696.696 0 0 1-.611-.392l-1.1-2.2c-.05-.098.024-.22.17-.22h13.959a.35.35 0 0 1 .343.342Zm-50.604 6.6c.66-.244 2.005-.88 2.005-2.688 0-3.105-2.298-4.254-5.036-4.254h-10.56c-.148 0-.343.147-.343.342V22.75a.35.35 0 0 0 .342.342h11.881c1.736-.024 4.23-1.002 4.23-4.205.024-2.004-1.785-2.835-2.519-3.031ZM41.885 11.97c0-.147.098-.22.22-.22h6.503c.684 0 2.176 0 2.176 1.418s-1.516 1.418-2.176 1.418h-6.723V11.97Zm7.505 8.263h-7.285c-.146 0-.22-.098-.22-.22V17.42h7.53c.733 0 1.907 0 1.907 1.418 0 1.443-1.345 1.394-1.932 1.394ZM86.548 9.255v2.152a.35.35 0 0 1-.342.342h-4.18v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a.99.99 0 0 1-.343-.733v-9.9h-4.547a.696.696 0 0 1-.61-.392l-1.1-2.2c-.025-.098.048-.22.17-.22h13.861c.147 0 .342.147.342.342Z"></path><path fill="#148EFF" stroke="none" d="M134.805 16.003c0-.978.782-1.785 1.784-1.785.978 0 1.785.807 1.785 1.785 0 .978-.782 1.785-1.785 1.785a1.778 1.778 0 0 1-1.784-1.785Z"></path><path stroke="none" d="M192.975 22.187a1.418 1.418 0 1 1-.003-2.837 1.418 1.418 0 0 1 .003 2.837Zm0-2.613a1.197 1.197 0 1 0-.004 2.398 1.197 1.197 0 0 0 .004-2.4v.002Zm.363 2.014-.5-.673h-.173v.673h-.283v-1.634h.586c.425 0 .611.138.611.46a.443.443 0 0 1-.437.477l.545.693-.349.004Zm-.141-1.376a.67.67 0 0 0-.269-.037h-.263v.542h.263c.251 0 .372-.093.372-.294a.237.237 0 0 0-.103-.212v.002Z"></path>
+                </svg>
+            </div>
+            <div class="navlinks font-objectSans flex">
+                <a href="#" class="flex items-center gap-2 h-12 px-4 rounded-md group hover:bg-gray-700 duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="gray" class="w-6 h-6 group-hover:fill-white">
+                        <path d="M10.75 2.75a.75.75 0 00-1.5 0v8.614L6.295 8.235a.75.75 0 10-1.09 1.03l4.25 4.5a.75.75 0 001.09 0l4.25-4.5a.75.75 0 00-1.09-1.03l-2.955 3.129V2.75z" />
+                        <path d="M3.5 12.75a.75.75 0 00-1.5 0v2.5A2.75 2.75 0 004.75 18h10.5A2.75 2.75 0 0018 15.25v-2.5a.75.75 0 00-1.5 0v2.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-2.5z" />
+                    </svg>
+                    <span>Download Battle.net</span>
+                </a>
+                <a href="#" class="flex items-center gap-2 h-12 px-4 text group rounded-md group hover:bg-gray-700 duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                        <path d="M11.104 8.068c-.13.046-.248.118-.527.364-.252.223-.456.591-.543 1.048-.052.27-.27.497-.546.497h-1c-.277 0-.503-.225-.474-.5.103-.955.504-1.895 1.24-2.544.323-.285.676-.57 1.179-.75.482-.171 1.018-.217 1.675-.217 1.407 0 3.022.477 3.67 2.047.624 1.509-.02 3.086-1.447 3.75-.128.06-.302.135-.454.202l-.253.112a3.31 3.31 0 0 0-.47.248.518.518 0 0 0-.15.132c-.003.005-.016.024-.016.09v.953a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-.952c0-.924.5-1.512 1.047-1.881.252-.17.524-.303.762-.411.136-.062.238-.106.335-.148.112-.049.216-.094.356-.159.463-.215.654-.66.442-1.173-.186-.451-.73-.81-1.822-.81-.594 0-.853.048-1.004.102ZM11 16.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Z"></path><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0Z"></path>
+                    </svg>
+                    <span>Support</span>
+                </a>
+                <a href="#" class=" flex items-center gap-2 h-12 px-4  rounded-md peer group hover:bg-gray-700 duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                        <path d="M15.75 9.75a3.733 3.733 0 0 1-1.433 2.949A3.734 3.734 0 0 1 12 13.5a3.734 3.734 0 0 1-3.023-1.53 3.75 3.75 0 1 1 6.773-2.22Zm-5.5 0a1.75 1.75 0 1 0 3.5 0 1.75 1.75 0 0 0-3.5 0Z"></path><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm5.047-4.73c.148.193.28.393.393.595A7.972 7.972 0 0 1 12 20a7.972 7.972 0 0 1-5.445-2.139l.005.005c.114-.202.245-.403.393-.596.442-.575.92-.943 1.36-1.13a7.366 7.366 0 0 0 3.687.992c1.34 0 2.594-.364 3.687-.993.44.188.919.556 1.36 1.13Zm-8.835-3.194c-1.188.268-2.237 1.115-2.99 2.172H5.22a8 8 0 1 1 13.56 0c-.755-1.056-1.804-1.904-2.992-2.172a3.627 3.627 0 0 0-.487-.075c-.947.715-2.082 1.131-3.3 1.131-1.22 0-2.355-.416-3.302-1.131-.164.014-.327.04-.487.075Z"></path>
+                    </svg>
+                    <span >Account</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-4 h-4 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                        <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
+                    </svg>
+                </a>
+                <div class="dropdown hidden peer-hover:block hover:block absolute top-16 -right-10 z-20 h-96 w-80 bg-primary border border-solid border-secondary shadow-md shadow-black">
+                    <div class="flex flex-col p-3">
+                        <button class="w-11/12 h-12 bg-button my-4 mx-auto rounded-md hover:bg-blue-400 duration-300 ">Log In</button>  
+                        <a href="#"  class="flex justify-start items-center gap-2 h-12  rounded-md group hover:bg-gray-700 duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                                <path d="M11.675 13.771a6.488 6.488 0 0 0-.954 2.042 6.833 6.833 0 0 1-3.048-.864c-.335.163-.705.457-1.057.916-.094.123-.18.248-.257.375a6.97 6.97 0 0 0 4.159 1.744c.052.71.218 1.388.48 2.016a9 9 0 1 1 8.974-8.282A6.452 6.452 0 0 0 18 11.076V11a7 7 0 1 0-12.973 3.651c.762-.995 1.821-1.75 3.002-1.85.853.643 1.874 1.018 2.971 1.018.229 0 .454-.016.675-.048Z"></path><path d="M14.375 8.975a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0Zm-2 0a1.375 1.375 0 1 1-2.75 0 1.375 1.375 0 0 1 2.75 0ZM16.455 13h1.093a.5.5 0 0 1 .492.412l.167.936a.55.55 0 0 0 .288.381c.098.052.191.11.282.171a.55.55 0 0 0 .49.076l1.051-.368a.5.5 0 0 1 .59.209l.518.837a.5.5 0 0 1-.12.659l-.943.725a.55.55 0 0 0-.205.445v.058a.55.55 0 0 0 .205.445l.943.726a.5.5 0 0 1 .12.659l-.516.837a.5.5 0 0 1-.591.209l-1.053-.369a.55.55 0 0 0-.49.076c-.09.062-.184.119-.282.171a.55.55 0 0 0-.289.382l-.166.935a.5.5 0 0 1-.493.412h-1.093a.5.5 0 0 1-.492-.412l-.167-.935a.55.55 0 0 0-.288-.382 3.132 3.132 0 0 1-.282-.171.55.55 0 0 0-.49-.075l-1.05.367a.5.5 0 0 1-.591-.209l-.517-.837a.5.5 0 0 1 .12-.659l.94-.724a.55.55 0 0 0 .206-.445v-.06a.55.55 0 0 0-.205-.445l-.942-.725a.5.5 0 0 1-.12-.659l.517-.837a.5.5 0 0 1 .59-.21l1.052.37a.55.55 0 0 0 .49-.076c.09-.062.185-.12.283-.172a.55.55 0 0 0 .29-.382l.166-.934a.5.5 0 0 1 .492-.412ZM17 19.09a1.58 1.58 0 1 0 0-3.157 1.58 1.58 0 0 0 0 3.158Z"></path>
+                            </svg>
+                            <span class="text-gray-700 font-notoregular group-hover:text-white">Account Settings</span>
+                        </a>
+                        <a href="#"  class="flex justify-start items-center gap-2 h-12 rounded-md group hover:bg-gray-700 duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                                <path d="M10.55 20.03 12 21.35l1.45-1.31.04-.036C18.616 15.344 22 12.27 22 8.5 22 5.42 19.58 3 16.5 3c-1.116 0-2.204.745-3.128 1.617A18.606 18.606 0 0 0 12 6.09c-.39-.459-.856-.986-1.372-1.473C9.704 3.745 8.616 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.777 3.394 6.855 8.537 11.518l.013.012Zm1.557-1.472-.002.002-.1.09-.109-.099-.003-.003c-2.615-2.371-4.623-4.198-6.001-5.883C4.536 11.008 4 9.733 4 8.5 4 6.525 5.525 5 7.5 5c.197 0 .607.121 1.25.631.609.484 1.193 1.129 1.727 1.756L12 9.175l1.523-1.788c.534-.627 1.118-1.272 1.727-1.756.643-.51 1.053-.631 1.25-.631C18.475 5 20 6.525 20 8.5c0 1.233-.537 2.508-1.892 4.167-1.379 1.686-3.386 3.515-6 5.89Z"></path>
+                            </svg>
+                            </svg>
+                            <span class="text-gray-700 font-notoregular group-hover:text-white duration-200">Wish List</span>
+                        </a>
+                        <a href="#"  class="flex justify-start items-center gap-2 h-12 rounded-md group hover:bg-gray-700 duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                                <path d="M2 2h2v16H2V2Zm3 20v-2H3v2h2Zm4-2H7v2h2v-2Zm2 0h5v2h-5v-2Zm10 0h-3v2h3v-2Zm1-18h-3v16h3V2Zm-6 0h1v16h-1V2Zm-2 0h-2v16h2V2ZM6 2h4v16H6V2Z"></path>
+                            </svg>
+                            <span class="text-gray-700 font-notoregular group-hover:text-white duration-200">Redeem Code</span>
+                        </a>
+                        <a href="#" class="flex justify-start items-center gap-2 h-12 rounded-md group hover:bg-gray-700 duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                                <path d="M13.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H15v16h-1.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H17v-3h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3V4h1.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-5ZM17 9h3v6h-3V9ZM4 7h9v2H4v6h9v2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"></path>
+                            </svg>
+                            <span class="text-gray-700 font-notoregular group-hover:text-white duration-200">Change BattleTag</span>
+                        </a> 
+                    </div>
+                    <div class="w-full p-3 absolute bottom-0 bg-secondary">
+                        <a href="#" class="flex justify-start items-center gap-2 h-12  rounded-md group hover:bg-gray-700 duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="w-6 h-6 group-hover:fill-white" viewBox="0 0 24 24" part="icon blz-icon">
+                                <path d="M3.114 20.31 4 15 15.585 3.414a2 2 0 0 1 2.828 0l2.172 2.172a2 2 0 0 1 0 2.828L9 20l-5.31.885a.5.5 0 0 1-.575-.576Zm4.924-2.177 8.34-8.34-2.172-2.172-8.34 8.34-.434 2.606 2.606-.434Zm9.754-9.754L19.171 7l-2.172-2.172-1.378 1.38 2.171 2.17Z"></path>
+                            </svg>
+                            <span class="text-gray-700 font-notoregular group-hover:text-white duration-200">Create Account</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- !Top Navbar -->
+
+    </header>
+    <!-- !Header -->
+
+    <!-- Nav -->
+    <nav class="bg-primary tablet:sticky top-0 z-[8] mobile:static">
+
+        <!-- Bottom Navbar -->
+        <section class="bottom_navbar flex justify-between py-4 bg-primary font-notobold desktop:w-[85%] mobile:w-[98%] mx-auto" >
+            <!-- Navlink -->
+            <div class="navlink flex items-center 2xl:basis-[64%] desktop:basis-[80%] desktop:flex mobile:hidden bg-secondary rounded-md text-sm">
+                <ul class="flex justify-start items-center">
+                    <li class=" relative group px-4 hover:bg-[#303237] rounded-s-md hover:text-white duration-200 ">
+                        <a href="#" class="flex items-center gap-1  h-14">
+                            <span class="text-gray-300 group-hover:text-white duration-200">Warcraft</span>
+                            <img src="./dist/icons/Arrow-Down.svg" alt="">
+                        </a>
+                        <nav class="absolute left-0 z-50 hidden group-hover:block w-[282px] bg-primary border border-solid border-secondary shadow-md shadow-black">
+                            <ul class="dropdown w-full p-2 ">
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/WOW.svg" alt=""><div><p>World of Warcraft</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/WOW-Classic.svg" alt=""><div><p>World of Warcraft Classic</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/W-Rumble.svg" alt=""><div><p>Warcraft Rumble</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/W-III.svg" alt=""><div><p>Warcraft III</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Heartstone.svg" alt=""><div><p>Heartstone</p><p class="font-notoregular text-xs text-[#65696d]">Massively Multiplayer RPG</p></div></a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="relative group px-4 hover:bg-[#303237] duration-200">
+                        <a href="#" class="flex items-center gap-1 h-14">
+                            <span class="text-gray-300 group-hover:text-white duration-200">Call Of Duty</span>
+                            <img src="./dist/icons/Arrow-Down.svg" alt="">
+                        </a>
+                        <nav class="absolute left-0 z-50 hidden group-hover:block w-[282px] bg-primary border border-solid border-secondary shadow-md shadow-black">
+                            <ul class="dropdown w-full p-2 ">
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/COD-ModernwarfareIII.svg" alt=""><div><p>Modern Warfare III</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Warzone.svg" alt=""><div><p>Warzone</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/COD-ModernwarfareII.svg" alt=""><div><p>Modern warfare II</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Vanguard.svg" alt=""><div><p>Vanguard</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/BO-Coldwar.svg" alt=""><div><p>Black ops cold war</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/COD-ModernwarfareI.svg" alt=""><div><p>Modern Warfare</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/COD-Modernwarfare2rR.svg" alt=""><div><p>Modern Warfare 2</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/BO4.svg" alt=""><div><p>Black ops 4</p><p class="font-notoregular text-xs text-[#65696d]">Action Shooter</p></div></a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="relative group hover:bg-[#303237] px-4 duration-200">
+                        <a href="#" class="flex items-center gap-1 h-14">
+                            <span class="text-gray-300 group-hover:text-white duration-200">Diablo</span>
+                            <img src="./dist/icons/Arrow-Down.svg" alt="">
+                        </a>
+                        <nav class="absolute left-0 z-50 hidden group-hover:block w-[282px] bg-primary border border-solid border-secondary shadow-md shadow-black">
+                            <ul class="dropdown w-full p-2 ">
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Diablo-IV.svg" alt=""><div><p>Diablo IV</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Diablo-Immortal.svg" alt=""><div><p>Diablo Immortal</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Diablo-III.svg" alt=""><div><p>Diablo III</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Diablo-II.svg" alt=""><div><p>Diablo II</p><p class="font-notoregular text-xs text-[#65696d]">Action RPG</p></div></a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="relative group hover:bg-[#303237] px-4 duration-200">
+                        <a href="#" class="flex items-center gap-1 h-14">
+                            <span class="text-gray-300 group-hover:text-white duration-200">Overwatch</span>
+                            <img src="./dist/icons/Arrow-Down.svg" alt="">
+                        </a>
+                        <nav class="absolute left-0 z-50 hidden group-hover:block w-[282px] bg-primary border border-solid border-secondary shadow-md shadow-black">
+                            <ul class="dropdown w-full p-2 ">
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Overwatch2.svg" alt=""><div><p>Overwatch 2</p><p class="font-notoregular text-xs text-[#65696d]">Team-Based Action Game</p></div></a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="relative group hover:bg-[#303237] px-4 duration-200">
+                        <a href="#" class="flex items-center gap-1 h-14">
+                            <span class="text-gray-300 group-hover:text-white duration-200">StarCraft</span>
+                            <img src="./dist/icons/Arrow-Down.svg" alt="">   
+                        </a>
+                         <nav class="absolute left-0 z-50 hidden group-hover:block w-[282px] bg-primary border border-solid border-secondary shadow-md shadow-black">
+                            <ul class="dropdown w-full p-2 ">
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Starcraft2.svg" alt=""><div><p>Starcraft II</p><p class="font-notoregular text-xs text-[#65696d]">Real-Time Strategy</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Starcraft1.svg" alt=""><div><p>Starcraft</p><p class="font-notoregular text-xs text-[#65696d]">Real-Time Strategy</p></div></a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="relative group hover:bg-[#303237] px-4 duration-200">
+                        <a href="#" class="flex items-center gap-1 h-14">
+                            <span class="text-gray-300 group-hover:text-white duration-200">More</span>
+                            <img src="./dist/icons/Arrow-Down.svg" alt="">
+                        </a>
+                        <nav class="absolute left-0 z-50 hidden group-hover:block w-[282px] bg-primary border border-solid border-secondary shadow-md shadow-black">
+                            <ul class="dropdown w-full p-2 ">
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Billizcon-col.svg" alt=""><div><p>BlizzCon Collection</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Billizard-Arcade.svg" alt=""><div><p>Blizzard Arcade Collection</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Crash-Bandicoot.svg" alt=""><div><p>Crash Bandicoot 4</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                                <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex gap-2"><img class="w-8" src="./dist/icons/Heros.svg" alt=""><div><p>Heroes Of The Storm</p><p class="font-notoregular text-xs text-[#65696d]">Bundles</p></div></a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="px-4">
+                        <a href="#" class="flex items-center h-14">
+                            <span class="text-[#6cdb00]">Black Friday Sale</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- !Navlink -->
+
+            <!-- Search Box -->
+            <div class="searchbox relative flex items-center 2xl:basis-[24%] desktop:basis-[4%] mobile:basis-full h-14 desktop:ml-2 bg-secondary desktop:rounded-md mobile:rounded-none text-sm overflow-hidden ">
+                <form action="" class="flex items-center  w-full h-full hover:bg-[#303237] duration-200">
+                    <a href="#" class="absolute left-2"><img class="w-6 " src="./dist/icons/Search.svg" alt=""></a>
+                    <label for="search"></label>
+                    <input type="text" id="search" placeholder="Search Shop" class="bg-transparent text-sm pl-10 w-full h-full outline-none peer duration-200 focus:bg-[#303237] 2xl:block desktop:hidden">
+                    <a href="#" class="absolute right-4 w-6 text-4xl cursor-pointer text-gray-600 invisible peer-focus:visible hover:text-white duration-200">&times;</a>
+                </form>
+            </div>
+            <!-- !Search Box -->
+
+            <!-- Balance Subnav-->
+            <section class="balance_subnav relative 2xl:basis-[12%] desktop:basis-[16%] desktop:flex mobile:hidden h-14 ml-2 bg-secondary rounded-md text-sm group">
+                <a href="#" class="realtive flex justify-center items-center gap-1 w-full h-full text-center rounded-md group hover:bg-[#303237] duration-200">
+                    <span class="text-gray-300 group-hover:text-white duration-200">Battle.net Balance</span>
+                    <img class="w-4 h-4" src="./dist/icons/Arrow-Down.svg" alt="">
+                </a>
+                <nav class="absolute top-full right-0 z-50 w-[282px] bg-primary border border-solid border-secondary shadow-md shadow-black font-notoregular hidden group-hover:block">
+                    <ul class="dropdown w-full p-2 ">
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2 w-full h-full group"><img class="w-6" src="./dist/icons/Add.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Add Balance</p></div></a></li>
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2  w-full h-full group"><img class="w-6" src="./dist/icons/Gift.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Gift Balance</p></div></a></li>
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2  w-full h-full group"><img class="w-6" src="./dist/icons/History.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Balance History</p></div></a></li>
+                        <li class="flex items-center h-14 pl-4 rounded-md hover:bg-[#25272b] duration-200"><a href="#" class="flex items-center gap-2  w-full h-full group"><img class="w-6" src="./dist/icons/Help.svg" alt=""><div><p class="text-gray-400 group-hover:text-white duration-200">Balance Help</p></div></a></li>
+                    </ul> 
+                </nav>
+            </section>
+            <!-- !Balance Subnav-->
+        </section>
+        <!-- !Bottom Navbar -->
+        
+    </nav>
+    <!-- !Nav -->
+
+    <!-- main -->
+    <main>
+
+        <!-- Banner -->
+        <section class="banner desktop:w-[85%] mobile:w-[98%] h-[360px] mx-auto mt-4">
+            <!-- Swiper -->
+            <div class="swiper banners group">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide relative"><img class="object-cover object-top" src="./dist/images/banner1.png" alt=""><div class="description absolute top-1/2 desktop:left-[320px] tablet:-translate-y-1/2 mobile:left-1/2 mobile:-translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl">Descend into the depths of Azeroth</h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Pre-purchase Now</button></div></div>
+                    <div class="swiper-slide"><img class="object-cover object-top" src="./dist/images/banner2.png" alt=""><div class="description absolute top-1/2 desktop:left-[320px] tablet:-translate-y-1/2 mobile:left-1/2 mobile:-translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl"> Prepare for a new age of Cataclysm </h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Upgrade Now</button></div></div>
+                    <div class="swiper-slide"><img class="object-cover object-top" src="./dist/images/banner3.png" alt=""><div class="description absolute top-1/2 desktop:left-[320px] tablet:-translate-y-1/2 mobile:left-1/2 mobile:-translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl"> Get legendary fall deals! </h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Buy Now</button></div></div>
+                    <div class="swiper-slide"><img class="object-cover object-top" src="./dist/images/banner4.png" alt=""><div class="description absolute top-1/2 desktop:left-[320px] tablet:-translate-y-1/2 mobile:left-1/2 mobile:-translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl"> Get up to 40% off on Diablo IV for a limited time </h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Purchase Now</button></div></div>
+                    <div class="swiper-slide"><img class="object-cover object-top" src="./dist/images/banner5.png" alt=""><div class="description absolute top-1/2 left-1/2 desktop:-translate-y-1/2 -translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl"> Up to 67% off through November 27 </h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Shop Now</button></div></div>
+                    <div class="swiper-slide"><img class="object-cover object-top" src="./dist/images/banner6.png" alt=""><div class="description absolute top-1/2 desktop:left-[320px] tablet:-translate-y-1/2 mobile:left-1/2 mobile:-translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl"> Get bonus Overwatch Coins with purchase for a limited time only! </h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Buy Now</button></div></div>
+                    <div class="swiper-slide"><img class="object-cover object-top" src="./dist/images/banner7.png" alt=""><div class="description absolute top-1/2 desktop:left-[320px] tablet:-translate-y-1/2 mobile:left-1/2 mobile:-translate-x-1/2 w-[280px] flex flex-col gap-4" ><h2 class="w-full font-objectSans text-xl">Available Now</h2><button class="w-full h-[52px] font-objectSans text-xl bg-button rounded-sm border-2 border-transparent hover:border-blue-400 duration-300 ">Buy Now</button></div></div>
+                </div>
+                <div class="swiper-button-next desktop:group-hover:block"><img class="h-full" src="./dist/icons/Arrow-Right.svg" alt=""></div>
+                <div class="swiper-button-prev desktop:group-hover:block"><img class="h-full" src="./dist/icons/Arrow-Left.svg" alt=""></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- !Swiper -->
+        </section>
+        <!-- !Banner -->
+
+        <!-- New Content For You -->
+        <section class="new_content desktop:w-[85%] mobile:w-[98%] mx-auto py-16">
+            <div class="title"><p class="font-objectSans text-2xl">New content for you</p></div>
+            <div class="products mt-4 flex flex-col justify-between gap-6 ">
+                <div class="row flex tablet:flex-row mobile:flex-col justify-between gap-4">
+                    <div class="product desktop:basis-1/2 tablet:basis-1/2 mobile:w-full ">
+                        <a href="#" class="group">
+                            <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                                <img class="w-full" src="./dist/images/product1.png" alt="">
+                                <div class="description p-8 group-hover:-translate-y-2 duration-300">
+                                    <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World of Warcraft</span></div>
+                                    <p class="text-white text-2xl font-objectSans">World of Warcraft®: The War Within™</p>
+                                    <p class="text-yellow-500 font-notoregular my-1">Includes the critically-acclaimed Dragonflight expansion.</p>
+                                    <p class="text-gray-300 text-sm font-notoregular my-1">Massively Multiplayer RPG</p>
+                                </div>
+                                <div class="price px-8 pb-8 mt-auto"><p class="text-gray-200 text-2xl font-objectSans">From EUR 49.99</p></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product desktop:basis-1/2 tablet:basis-1/2 mobile:w-full ">
+                        <a href="#" class="group">
+                            <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                                <img class="w-full" src="./dist/images/product2.jpg" alt="">
+                                <div class="description p-8 group-hover:-translate-y-2 duration-300">
+                                    <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/COD-ModernwarfareIII.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Call of Duty: Modern Warfare III</span></div>
+                                    <p class="text-white text-2xl font-objectSans">Call of Duty®: Modern Warfare® III - Vault Edition</p>
+                                    <p class="text-yellow-500 font-notoregular my-1">Purchase Now and get ready for Season 1</p>
+                                    <p class="text-gray-300 text-sm font-notoregular my-1">Action Shooter</p>
+                                </div>
+                                <div class="price px-8 pb-8 mt-auto"><p class="text-gray-200 text-2xl font-objectSans">EUR 99.99</p></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row flex justify-between mobile:flex-wrap desktop:flex-nowrap items-stretch desktop:gap-6 tablet:gap-2 mobile:gap-4">
+                        <div class="product desktop:basis-1/3 tablet:basis-[49%] mobile:basis-full">
+                            <a href="#" class="group">
+                                <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                                    <img class="w-full" src="./dist/images/product3.png" alt="">
+                                    <div class="description p-8 group-hover:-translate-y-1 duration-300">
+                                        <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/W-Rumble.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Warcraft Rumble</span></div>
+                                        <p class="text-white text-lg font-objectSans">Warcraft Rumble™</p>
+                                        <p class="text-yellow-500 text-sm font-notoregular my-2">Available Now</p>
+                                        <p class="text-gray-300 text-xs font-notoregular my-2">Action Strategy</p>
+                                    </div>
+                                    <div class="price px-8 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">Download Now</p></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product desktop:basis-1/3 tablet:basis-[49%] mobile:basis-full">
+                            <a href="#" class="group">
+                                <div class="relative h-full flex flex-col flex-wrap bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                                    <img class="w-full" src="./dist/images/product4.png" alt="">
+                                    <div class="description p-8 pb-4 group-hover:-translate-y-1 duration-300">
+                                        <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW-Classic.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World of Warcraft Classic Cataclysm</span></div>
+                                        <p class="text-white text-lg font-objectSans">Blazing Heroic Pack</p>
+                                        <p class="text-yellow-500 text-sm font-notoregular my-2">Get a Ragnaros-inspired mount and Lil’ Wrathion pet in both WoW and WoW Classic progression realms!</p>
+                                        <p class="text-gray-300 text-xs font-notoregular my-2">Game Upgrades</p>
+                                    </div>
+                                    <div class="price px-8 pb-7 mt-auto"><p class="text-gray-200 text-base font-objectSans">EUR 29.99</p></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product desktop:basis-1/3 tablet:basis-[49%] mobile:basis-full">
+                            <a href="#" class="group">
+                                <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                                    <img class="w-full" src="./dist/images/product5.png" alt="">
+                                    <div class="description p-8 group-hover:-translate-y-1 duration-300">
+                                        <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Heartstone.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Hearthstone</span></div>
+                                        <p class="text-white text-lg font-objectSans">Badlands Catch-Up Packs Bundle</p>
+                                        <p class="text-yellow-500 text-sm font-notoregular my-2">Available through December 4, 2023</p>
+                                        <p class="text-gray-300 text-xs font-notoregular my-2">Card Packs</p>
+                                    </div>
+                                    <div class="price px-8 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">EUR 19.99</p></div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <!-- !New Content For You -->
+
+        <!-- Recommended -->
+        <section class="recommended desktop:w-[85%] mobile:w-[98%] mx-auto">
+            <div class="title"><p class="font-objectSans text-2xl">Recommended</p></div>
+            <div class="products my-4 grid grid-cols-[repeat(auto-fit,_minmax(294px,_1fr))] grid-rows-[510px,450px] gap-6">
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product1.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World of Warcraft</span></div>
+                                <p class="text-white text-lg font-objectSans">World of Warcraft®: The War Within™</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Includes the critically-acclaimed Dragonflight expansion.</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Massively Multiplayer RPG</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From EUR 49.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group h-full">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full" src="./dist/images/product6.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Diablo-IV.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Diablo IV</span></div>
+                                <p class="text-white text-lg font-objectSans">Diablo® IV: Ultimate Edition</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Season of Blood now live.</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Action RPG</p>
+                            </div>
+                            <div off-price="EUR 59.99" discount="-40%" class="price px-6 pb-8 mt-auto before:content-[attr(off-price)] before:text-[#6cdb00] before:font-notobold after:content-[attr(discount)] after:bg-[#6cdb00] after:text-black after:font-notobold after:text-sm after:px-1 after:rounded-sm">
+                                <p class="text-gray-400 text-base font-objectSans pl-2 pr-7 line-through inline-block">EUR 99.99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product7.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Billizcon-col.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Blizzcon</span></div>
+                                <p class="text-white text-lg font-objectSans">BlizzCon® Collection</p>                                
+                                <p class="text-gray-300 text-xs font-notoregular my-2">In-Game Content</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From EUR 29.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full" src="./dist/images/product8.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Diablo-IV.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Diablo IV</span></div>
+                                <p class="text-white text-lg font-objectSans">Premium Battle Pass - Season of Blood</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Get the Premium Battle pass - featuring 90 tiers of rewards!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">In-Game Content</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">1,000 Platinum</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product9.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Overwatch2.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Overwatch 2</span></div>
+                                <p class="text-white text-lg font-objectSans">Overwatch® 2 – Ultimate Battle Pass Bundle: Season Seven</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Get the Overwatch 2: Season Seven Premium Battle Pass + 20 Tiers, Lilith Moira and Inarius Pharah Legendary Skins, 2000 OW Coins, and More!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Team-Based Action Game</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">EUR 39.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full" src="./dist/images/product10.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Heartstone.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Hearthstone</span></div>
+                                <p class="text-white text-lg font-objectSans">TITANS Packs</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Card Packs</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From EUR 2.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full" src="./dist/images/product11.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Warzone.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Call of Duty: Warzone</span></div>
+                                <p class="text-white text-lg font-objectSans">Call of Duty®: Warzone</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Free For Everyone</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Free-To-Play Action Shooter</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">Play For Free</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product4.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW-Classic.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World of Warcraft Classic Cataclysm</span></div>
+                                <p class="text-white text-lg font-objectSans">Blazing Heroic Pack</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Get a Ragnaros-inspired mount and Lil’ Wrathion pet in both WoW and WoW Classic progression realms!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Game Upgrades</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From ERU 29.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full h-[180px] object-cover object-top" src="./dist/images/product12.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Diablo-II.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Diablo II: Resurrected</span></div>
+                                <p class="text-white text-lg font-objectSans">Diablo II: Resurrected™</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Evil Is Resurrected</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Action RPG</p>
+                            </div>
+                            <div off-price="EUR 13.19" discount="-67%" class="price px-6 pb-8 mt-auto before:content-[attr(off-price)] before:text-[#6cdb00] before:font-notobold after:content-[attr(discount)] after:bg-[#6cdb00] after:text-black after:font-notobold after:text-sm after:px-1 after:rounded-sm">
+                                <p class="text-gray-400 text-base font-objectSans pl-2 pr-7 line-through inline-block">EUR 39.99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full" src="./dist/images/product13.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/COD-ModernwarfareII.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Call of Duty: Modern Warfare II</span></div>
+                                <p class="text-white text-lg font-objectSans">Call of Duty®: Modern Warfare® II</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Play Warzone™ for free now.</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Action Shooter</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">EUR 69.99</p></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- !Recommended -->
+
+        <!-- Featured -->
+        <section class="featured desktop:w-[85%] mobile:w-[98%] mx-auto py-16">
+            <div class="title"><p class="font-objectSans text-2xl">Featured</p></div>
+            <div class="products my-4 grid grid-cols-[repeat(auto-fit,_minmax(294px,_1fr))] grid-rows-[510px,480px] gap-6">
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product7.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Billizcon-col.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Blizzcon</span></div>
+                                <p class="text-white text-lg font-objectSans">BlizzCon® Collection</p>                                
+                                <p class="text-gray-300 text-xs font-notoregular my-2">In-Game Content</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From EUR 29.99</p></div>
+                        </div>
+                    </a>
+                </div>               
+                <div class="product">
+                    <a href="#" class="group h-full">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product14.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/W-Rumble.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Warcraft Rumble</span></div>
+                                <p class="text-white text-lg font-objectSans">Coin Packs</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Use Coins to purchase Minis, Tomes of Experience, Talents, and more!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">In-Content</p>
+                            </div>
+                            <div off-price="EUR 59.99" discount="-40%" class="price px-6 pb-8 mt-auto">
+                                <p class="text-gray-200 text-base font-objectSans">From EUR 0.99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>              
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product2.jpg" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/COD-ModernwarfareIII.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Call of Duty: Modern Warfare III</span></div>
+                                <p class="text-white text-lg font-objectSans">Call of Duty®: Modern Warfare® III - Vault Edition</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Purchase Now and get ready for Season 1</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Acton Shooter</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From EUR 99.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product15.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Heartstone.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Heartstone</div>
+                                <p class="text-white text-lg font-objectSans">Showdown in the Badlands Tavern Pass</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Available through March 11, 2024</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Card Packs</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">EUR 19.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product9.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Overwatch2.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Overwatch 2</span></div>
+                                <p class="text-white text-lg font-objectSans">Overwatch® 2 – Ultimate Battle Pass Bundle: Season Seven</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Get the Overwatch 2: Season Seven Premium Battle Pass + 20 Tiers, Lilith Moira and Inarius Pharah Legendary Skins, 2000 OW Coins, and More!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Team-Based Action Game</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">EUR 39.99</p></div>
+                        </div>
+                    </a>
+                </div>           
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full" src="./dist/images/product16.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Diablo-IV.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Diablo IV</span></div>
+                                <p class="text-white text-lg font-objectSans">Accelerated Battle Pass - Season of Blood</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Get the Premium Battle pass plus 20 Tier Skips and “Vampire's Repose” emote!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">In-Game Content</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">2,800 Platinum</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product1.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World of Warcraft</span></div>
+                                <p class="text-white text-lg font-objectSans">World of Warcraft®: The War Within™</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Includes the critically-acclaimed Dragonflight expansion.</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Massively Multiplayer RPG</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From EUR 49.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full" src="./dist/images/product11.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Warzone.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Call of Duty: Warzone</span></div>
+                                <p class="text-white text-lg font-objectSans">Call of Duty®: Warzone</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Free For Everyone</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Free-To-Play Action Shooter</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">Play For Free</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['GREAT_DEAL'] before:font-objectSans before:text-xs before:text-black before:bg-[#6cdb00] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full h-[169.2px] object-cover object-top" src="./dist/images/product17.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Overwatch2.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Overwatch 2</span></div>
+                                <p class="text-white text-lg font-objectSans">Overwatch® 2 – 10,000 (+5,000 Bonus) Overwatch Coins</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Limited one-time purchase promotion through December 4!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Coins and Tokens</p>
+                            </div>
+                            <div off-price="EUR 13.19" discount="-67%" class="price px-6 pb-8 mt-auto">
+                                <p class="text-gray-200 text-base font-objectSans">EUR 99.99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product4.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW-Classic.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World of Warcraft Classic Cataclysm</span></div>
+                                <p class="text-white text-lg font-objectSans">Blazing Heroic Pack</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Get a Ragnaros-inspired mount and Lil’ Wrathion pet in both WoW and WoW Classic progression realms!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Game Upgrades</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">ERU 79.99</p></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- !Featured -->
+
+        <!-- Trending Now -->
+        <section class="trending_now desktop:w-[85%] mobile:w-[98%] mx-auto">
+            <div class="title"><p class="font-objectSans text-2xl">Trending Now</p></div>
+            <div class="products my-4 grid grid-cols-[repeat(auto-fit,_minmax(294px,_1fr))] grid-rows-[repeat(2,460px)] gap-6">
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product18.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/COD-ModernwarfareIII.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Call of Duty: Modern Warfare III</span></div>
+                                <p class="text-white text-lg font-objectSans">Call of Duty®: Modern Warfare® III</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Purchase Now and get ready for Season 1</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Acton Shooter</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">EUR 69.99</p></div>
+                        </div>
+                    </a>
+                </div>               
+                <div class="product">
+                    <a href="#" class="group h-full">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product19.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/battlenet-nexus-color.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Battle.net Services</span></div>
+                                <p class="text-white text-lg font-objectSans">Battle.net® Balance</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Game Services</p>
+                            </div>
+                            <div off-price="EUR 59.99" discount="-40%" class="price px-6 pb-8 mt-auto">
+                                <p class="text-gray-200 text-base font-objectSans">Learn More</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>              
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full h-[169.2px] object-cover object-top" src="./dist/images/product12.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Diablo-II.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Diablo II: Resurrected</span></div>
+                                <p class="text-white text-lg font-objectSans">Diablo II: Resurrected™</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Evil Is Resurrected</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Action RPG</p>
+                            </div>
+                            <div off-price="EUR 13.19" discount="-67%" class="price px-6 pb-8 mt-auto before:content-[attr(off-price)] before:text-[#6cdb00] before:font-notobold after:content-[attr(discount)] after:bg-[#6cdb00] after:text-black after:font-notobold after:text-sm after:px-1 after:rounded-sm">
+                                <p class="text-gray-400 text-base font-objectSans pl-2 pr-7 line-through inline-block">EUR 39.99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product20.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/W-Rumble.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Warcraft Rumble</div>
+                                <p class="text-white text-lg font-objectSans">Sweet Superior!</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Snag bundles overflowing with Coins, Tomes, Cores, and Arc Energy!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">In-Game Content</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">EUR 9.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full h-[169.2px] object-cover object-top" src="./dist/images/product21.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/W-III.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Warcraft III</span></div>
+                                <p class="text-white text-lg font-objectSans">Warcraft® III: Reforged</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Real-time Strategy</p>
+                            </div>
+                            <div off-price="EUR 14.19" discount="-50%" class="price px-6 pb-8 mt-auto before:content-[attr(off-price)] before:text-[#6cdb00] before:font-notobold after:content-[attr(discount)] after:bg-[#6cdb00] after:text-black after:font-notobold after:text-sm after:px-1 after:rounded-sm"><p class="text-gray-400 text-base font-objectSans pl-2 pr-7 line-through inline-block">EUR 29.99</p></div>
+                        </div>
+                    </a>
+                </div>           
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product4.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW-Classic.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World of Warcraft Classic Cataclysm</span></div>
+                                <p class="text-white text-lg font-objectSans">Blazing Heroic Pack</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Get a Ragnaros-inspired mount and Lil’ Wrathion pet in both WoW and WoW Classic progression realms!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Game Upgrades</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From ERU 29.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product2.jpg" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/COD-ModernwarfareIII.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Call of Duty: Modern Warfare III</span></div>
+                                <p class="text-white text-lg font-objectSans">Call of Duty®: Modern Warfare® III - Vault Edition</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Purchase Now and get ready for Season 1</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Acton Shooter</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From EUR 99.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['GREAT_DEAL'] before:font-objectSans before:text-xs before:text-black before:bg-[#6cdb00] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full h-[169.2px] object-cover object-top" src="./dist/images/product17.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Overwatch2.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Overwatch 2</span></div>
+                                <p class="text-white text-lg font-objectSans">Overwatch® 2 – 10,000 (+5,000 Bonus) Overwatch Coins</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Limited one-time purchase promotion through December 4!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Coins and Tokens</p>
+                            </div>
+                            <div off-price="EUR 13.19" discount="-67%" class="price px-6 pb-8 mt-auto">
+                                <p class="text-gray-200 text-base font-objectSans">EUR 99.99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group h-full">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full" src="./dist/images/product6.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Diablo-IV.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Diablo IV</span></div>
+                                <p class="text-white text-lg font-objectSans">Diablo® IV: Ultimate Edition</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Season of Blood now live.</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Action RPG</p>
+                            </div>
+                            <div off-price="EUR 59.99" discount="-40%" class="price px-6 pb-8 mt-auto before:content-[attr(off-price)] before:text-[#6cdb00] before:font-notobold after:content-[attr(discount)] after:bg-[#6cdb00] after:text-black after:font-notobold after:text-sm after:px-1 after:rounded-sm">
+                                <p class="text-gray-400 text-base font-objectSans pl-2 pr-7 line-through inline-block">EUR 99.99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product23.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/W-Rumble.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Warcraft Rumble</span></div>
+                                <p class="text-white text-lg font-objectSans">Blazing Heroic Pack</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Snag bundles overflowing with Coins, Tomes, Cores, and Arc Energy!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">In-Game Content</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">ERU 9.99</p></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- !Trending Now -->
+
+        <!-- Most Gifted -->
+        <section class="most_gifted desktop:w-[85%] mobile:w-[98%] mx-auto py-16">
+            <div class="title"><p class="font-objectSans text-2xl">Most Gifted</p></div>
+            <div class="products my-4 grid grid-cols-[repeat(auto-fit,_minmax(294px,_1fr))] grid-rows-[repeat(2,460px)] gap-6">
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product24.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Overwatch2.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Overwatch 2</span></div>
+                                <p class="text-white text-lg font-objectSans">Overwatch® 2 Premium Battle Pass: Season Seven</p>     
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Get the Season 7 Premium Battle Pass - featuring over 80 tiers of rewards!</p>                           
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Team-Based Action Game</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">Learn More</p></div>
+                        </div>
+                    </a>
+                </div>               
+                <div class="product">
+                    <a href="#" class="group h-full">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product19.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/battlenet-nexus-color.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Battle.net Services</span></div>
+                                <p class="text-white text-lg font-objectSans">Battle.net® Balance</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Game Services</p>
+                            </div>
+                            <div off-price="EUR 59.99" discount="-40%" class="price px-6 pb-8 mt-auto">
+                                <p class="text-gray-200 text-base font-objectSans">Learn More</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>              
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full h-[169.2px] object-cover object-top" src="./dist/images/product25.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World Of Warcraft</span></div>
+                                <p class="text-white text-lg font-objectSans">60 Days Of Game Time</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Includes access to World of Warcraft, Wrath of the Lich King Classic, and Classic Hardcore Realms!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Game Services</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto">
+                                <p class="text-gray-400 text-base font-objectSans">EUR 25.98</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product1.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World of Warcraft</span></div>
+                                <p class="text-white text-lg font-objectSans">World of Warcraft®: The War Within™</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Includes the critically-acclaimed Dragonflight expansion.</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Massively Multiplayer RPG</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From EUR 49.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['GREAT_DEAL'] before:font-objectSans before:text-xs before:text-black before:bg-[#6cdb00] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full h-[169.2px] object-cover object-top" src="./dist/images/product17.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Overwatch2.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Overwatch 2</span></div>
+                                <p class="text-white text-lg font-objectSans">Overwatch® 2 – 10,000 (+5,000 Bonus) Overwatch Coins</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Limited one-time purchase promotion through December 4!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Coins and Tokens</p>
+                            </div>
+                            <div off-price="EUR 13.19" discount="-67%" class="price px-6 pb-8 mt-auto">
+                                <p class="text-gray-200 text-base font-objectSans">EUR 99.99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>           
+                <div class="product">
+                    <a href="#" class="group h-full">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full" src="./dist/images/product6.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Diablo-IV.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Diablo IV</span></div>
+                                <p class="text-white text-lg font-objectSans">Diablo® IV: Ultimate Edition</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Season of Blood now live.</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Action RPG</p>
+                            </div>
+                            <div off-price="EUR 59.99" discount="-40%" class="price px-6 pb-8 mt-auto before:content-[attr(off-price)] before:text-[#6cdb00] before:font-notobold after:content-[attr(discount)] after:bg-[#6cdb00] after:text-black after:font-notobold after:text-sm after:px-1 after:rounded-sm">
+                                <p class="text-gray-400 text-base font-objectSans pl-2 pr-7 line-through inline-block">EUR 99.99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product7.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Billizcon-col.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Blizzcon</span></div>
+                                <p class="text-white text-lg font-objectSans">BlizzCon® Collection</p>                                
+                                <p class="text-gray-300 text-xs font-notoregular my-2">In-Game Content</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From EUR 29.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product4.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW-Classic.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World of Warcraft Classic Cataclysm</span></div>
+                                <p class="text-white text-lg font-objectSans">Blazing Heroic Pack</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Get a Ragnaros-inspired mount and Lil’ Wrathion pet in both WoW and WoW Classic progression realms!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Game Upgrades</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">From ERU 29.99</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200">
+                            <img class="w-full h-[169.2px] object-cover object-top" src="./dist/images/product12.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/Diablo-II.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">Diablo II: Resurrected</span></div>
+                                <p class="text-white text-lg font-objectSans">Diablo II: Resurrected™</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Evil Is Resurrected</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Action RPG</p>
+                            </div>
+                            <div off-price="EUR 13.19" discount="-67%" class="price px-6 pb-8 mt-auto before:content-[attr(off-price)] before:text-[#6cdb00] before:font-notobold after:content-[attr(discount)] after:bg-[#6cdb00] after:text-black after:font-notobold after:text-sm after:px-1 after:rounded-sm">
+                                <p class="text-gray-400 text-base font-objectSans pl-2 pr-7 line-through inline-block">EUR 39.99</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="#" class="group">
+                        <div class="relative h-full flex flex-col bg-secondary rounded overflow-hidden shadow-lg group-hover:bg-[#303237] duration-200 before:content-['NEW'] before:font-objectSans before:text-xs before:bg-[#dd0000] before:rounded-md before:inline-block before:absolute before:p-1 before:top-1 before:left-1">
+                            <img class="w-full" src="./dist/images/product26.png" alt="">
+                            <div class="description p-6 group-hover:-translate-y-1 duration-300">
+                                <div class="flex items-center text-gray-400 mb-2"><img class="w-8 h-6" src="./dist/icons/WOW.svg" alt=""><span class="text-gray-300 text-sm font-objectSans uppercase">World of Warcraft</span></div>
+                                <p class="text-white text-lg font-objectSans">World of Warcraft®: Dragonflight</p>
+                                <p class="text-yellow-500 text-sm font-notoregular my-2">Now included in all editions of The War Within™!</p>
+                                <p class="text-gray-300 text-xs font-notoregular my-2">Massively Multiplayer RPG</p>
+                            </div>
+                            <div class="price px-6 pb-8 mt-auto"><p class="text-gray-200 text-base font-objectSans">ERU 29.99</p></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Most Gifted -->
+
+    </main>
+    <!-- !main -->
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Download App -->
+        <section class="download-app h-[570px] relative">
+            <figure class="h-full">
+                <img class="h-full object-cover" src="./dist/images/footer-bg.png" alt="">
+            </figure>
+            <div class="downloadbar flex desktop:flex-row tablet:flex-col-reverse mobile:flex-col-reverse justify-center items-center desktop:gap-20 tablet:gap-6 mobile:gap-4 absolute top-0 left-0 w-full h-full tablet:py-20 tablet:px-10 mobile:py-10 mobile:px-5">
+                <img class="desktop:w-[40%] mobile:w-[60%] " src="./dist/images/footer-laptop.png" alt="">
+                <article class="desktop:w-[600px] mobile:w-full h-full flex flex-col justify-center desktop:items-start tablet:items-center desktop:gap-12 mobile:gap-6">
+                    <div class="title">
+                        <h3 class="font-objectSans desktop:text-5xl tablet:text-3xl mobile:text-center pl-4 pb-5">Dive into adventure</h3>
+                        <p class="font-notoregular desktop:text-lg tablet:text-md mobile:text-center text-gray-400">Download Battle.net and join a community of millions.</p>
+                    </div>
+                    <div class="downbtn flex tablet:flex-row mobile:flex-col tablet:justify-between mobile:items-center gap-4 font-objectSans text-xl">
+                        <button class="flex justify-center items-center desktop:w-1/2 tablet:w-[320px] mobile:w-[80%] tablet:h-[72px] mobile:h-[58px] bg-button rounded border-2 border-transparent hover:border-blue-400 duration-500"><img class="w-6" src="./dist/icons/Windows.svg" alt=""><span class="pl-2 desktop:text-base tablet:text-sm mobile:text-sm tablet:text-left mobile:text-center">Download For Windows</span></button>
+                        <button class="desktop:w-1/2 tablet:w-2/6 mobile:w-[80%] tablet:h-[72px] mobile:h-[58px] bg-secondary rounded  border-2 border-transparent hover:border-gray-600 duration-500"><span class="desktop:text-base tablet:text-sm mobile:text-sm">Learn More</span></button>
+                    </div>
+                    <div class="downlinks font-notoregular text-md tablet:text-left mobile:text-center">
+                        <p class="text-gray-400">Also available for <a href="#" class="text-[#009dff] font-objectSans underline underline-offset-8 hover:text-blue-400 duration-200">Mac</a> and <a href="#" class="text-[#009dff] font-objectSans underline underline-offset-8 hover:text-blue-400 duration-200">Mobile</a></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Download App -->
+
+        <!-- Extras -->
+        <section class="extras flex flex-col justify-center items-center gap-7 bg-primary h-[516px] border-t border-secondary">  
+            <div class="region flex justify-center bg-transparent group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-[#148eff] mr-2 cursor-pointer group-hover:fill-[#66c4ff] duration-200" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" focusable="false"
+                    aria-hidden="true">
+                    <g><path d="M32,7.448C18.461,7.448,7.449,18.462,7.449,32c0,13.538,11.013,24.552,24.551,24.552   c13.538,0,24.551-11.014,24.551-24.552C56.551,18.462,45.538,7.448,32,7.448z M39.68,45.697v-5.55h1.261v5.55H39.68z M53.235,32   c0,0.351-0.036,0.694-0.053,1.041l-0.41-0.41l-3.152,3.152l-3.082-3.082h-2.601l-0.963,0.961l-4.557-4.556v-2.153h-4.438   l-2.544-2.544l-3.129,3.13h3.349l1.306,1.306H36.6l5.904,5.904v1.87l-3.528,3.528v5.746l-4.292,4.292h-1.794l-2.765-2.764v-7.469   l-1.939-1.941h-3.104l-3.201-3.199v-3.491l4.509-3.782v-4.123l7.275-7.273l2.182,2.182h5.044l3.525-3.525   C49.751,18.657,53.235,24.914,53.235,32z M18.312,15.778c0.73-0.616,1.506-1.176,2.316-1.69h9.044l-4.511,4.51h-2.989l-2.12,2.12   h-1.74V15.778z M15.335,18.865v4.212l-3.965,3.965C12.097,24.011,13.465,21.235,15.335,18.865z M10.865,33.997l9.417,7.119v3.492   l-2.803,2.859C13.811,44.021,11.36,39.299,10.865,33.997z"></path></g>
+                </svg>
+                <label for="countries"></label>
+                <select class="bg-primary text-gray-400 cursor-pointer group-hover:text-white duration-200 placeholder:bg-red-400" name="countries" id="countries">
+                    <option class="text-gray-400 bg-transparent" value="us" selected>English (US)</option>
+                    <option class="text-gray-400 bg-transparent" value="uk">United Kingdom (UK)</option>
+                    <option class="text-gray-400 bg-transparent" value="fr">France (FR)</option>
+                    <option class="text-gray-400 bg-transparent" value="ru">Russia (UR)</option>
+                </select>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="mobile:w-[288px] mobile:h-[54px]" fill="white" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="0" aria-labelledby="blz-icon-title-battlenet-logo" viewBox="0 0 196 32"
+                        part="icon blz-icon" height="54px" width="325px">
+                        <title id="blz-icon-title-battlenet-logo">Battle.net</title><path fill="#148EFF" stroke="none"
+                            d="M26.193 11.848c.895-2.755 1.063-5.267.453-7.17l-.017-.054c-.037-.103-.128-.321-.243-.321-.088 0-.089.146-.084.22l.006.043c.194 1.7-.326 4.124-1.371 6.663-2.143-.973-4.717-1.75-7.573-2.208-2.566-.413-5.023-.504-7.25-.322.264-1.752.919-2.971 1.993-3.229 1.478-.353 3.09.619 4.627 2.388a34.717 34.717 0 0 1 3.032.552c-2.803-5.272-6.562-8.227-9.421-7.136-2.176.83-3.287 3.823-3.155 7.846-2.833.603-5.093 1.713-6.436 3.193l-.037.041c-.072.084-.215.272-.157.372.043.075.17.003.233-.038l.034-.026c1.375-1.018 3.735-1.78 6.456-2.145.229 2.343.843 4.96 1.873 7.662.926 2.429 2.076 4.602 3.348 6.44-1.65.648-3.034.69-3.793-.111-1.046-1.103-1.01-2.985-.246-5.202a34.626 34.626 0 0 1-1.038-2.901c-3.165 5.063-3.844 9.796-1.47 11.727 1.806 1.47 4.955.935 8.372-1.19 1.939 2.152 4.03 3.554 5.983 3.977l.055.012c.108.02.342.05.4-.05.044-.076-.082-.15-.149-.183a3.123 3.123 0 0 1-.04-.017c-1.569-.681-3.409-2.344-5.085-4.518 1.914-1.37 3.874-3.21 5.699-5.454 1.64-2.016 2.947-4.098 3.904-6.119 1.385 1.106 2.113 2.282 1.8 3.34-.433 1.458-2.08 2.368-4.382 2.814a34.57 34.57 0 0 1-1.994 2.35c5.967.21 10.405-1.57 10.89-4.59.37-2.3-1.667-4.759-5.217-6.656Zm-5.183 6.026c-2.104 2.587-4.727 4.789-7.06 6.062a26.423 26.423 0 0 1-2.248-4.496c-1.188-3.116-1.784-6.489-1.72-9.146a26.42 26.42 0 0 1 5.018.301c3.292.53 6.511 1.7 8.78 3.083a26.4 26.4 0 0 1-2.77 4.196Z"></path><path stroke="none"
+                            d="M75.328 22.603 68.972 9.915a1.858 1.858 0 0 0-1.638-1.002h-3.3c-.685 0-1.32.391-1.638 1.002l-6.307 12.688c-.123.22.048.489.293.489h2.836a.446.446 0 0 0 .415-.244l1.394-2.787h9.362l1.394 2.787c.073.17.22.244.415.244h2.836c.22 0 .367-.269.294-.489ZM62.42 17.249l2.64-5.304a.381.381 0 0 1 .318-.196h.66c.147 0 .269.073.318.195l2.64 5.305H62.42Zm133.256-7.994v2.152a.35.35 0 0 1-.343.342h-5.72v12.859a.24.24 0 0 1-.391.195l-2.836-2.42a.99.99 0 0 1-.342-.733v-9.901h-4.596a.696.696 0 0 1-.611-.391l-1.1-2.2c-.049-.123.024-.245.146-.245h15.401c.22 0 .392.171.392.342Zm-30.68 2.738v2.616h10.438a1.419 1.419 0 0 1 0 2.836h-10.438V19.4c0 .489.415.904.904.904h11.759a.35.35 0 0 1 .342.342V22.8a.368.368 0 0 1-.342.342h-12.712a3.625 3.625 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.368.368 0 0 1-.342.342h-12.443c-.147-.024-.22.074-.22.22Zm-6.747-2.64v12.443c0 1.492-1.736 2.323-2.909 1.345l-10.977-9.314v8.85c0 .244-.195.44-.44.44h-2.762c-.245 0-.465-.196-.465-.44v-12.42c0-1.49 1.736-2.322 2.909-1.344l10.977 9.314v-8.85c0-.244.195-.464.44-.464h2.762c.318 0 .465.22.465.44Zm-34.2 2.64v2.616h7.285a1.418 1.418 0 0 1 0 2.836h-7.261V19.4c0 .489.416.904.905.904h11.758a.35.35 0 0 1 .342.342V22.8a.35.35 0 0 1-.342.342h-12.712a3.626 3.626 0 0 1-3.618-3.618v-8.776c0-1.003.807-1.81 1.809-1.81h14.521a.35.35 0 0 1 .342.343v2.151a.35.35 0 0 1-.342.342h-12.443c-.147-.024-.244.074-.244.22Zm-5.183 8.605v2.152a.35.35 0 0 1-.342.342h-10.219a3.626 3.626 0 0 1-3.618-3.618V9.255a.35.35 0 0 1 .343-.342h3.006a.35.35 0 0 1 .343.342v10.097c0 .489.415.904.904.904h9.241c.22 0 .342.171.342.342ZM102.781 9.255v2.152a.35.35 0 0 1-.343.342h-5.329v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a1.002 1.002 0 0 1-.343-.757v-9.876H90.02a.696.696 0 0 1-.611-.392l-1.1-2.2c-.05-.098.024-.22.17-.22h13.959a.35.35 0 0 1 .343.342Zm-50.604 6.6c.66-.244 2.005-.88 2.005-2.688 0-3.105-2.298-4.254-5.036-4.254h-10.56c-.148 0-.343.147-.343.342V22.75a.35.35 0 0 0 .342.342h11.881c1.736-.024 4.23-1.002 4.23-4.205.024-2.004-1.785-2.835-2.519-3.031ZM41.885 11.97c0-.147.098-.22.22-.22h6.503c.684 0 2.176 0 2.176 1.418s-1.516 1.418-2.176 1.418h-6.723V11.97Zm7.505 8.263h-7.285c-.146 0-.22-.098-.22-.22V17.42h7.53c.733 0 1.907 0 1.907 1.418 0 1.443-1.345 1.394-1.932 1.394ZM86.548 9.255v2.152a.35.35 0 0 1-.342.342h-4.18v12.859a.24.24 0 0 1-.391.195l-2.86-2.445a.99.99 0 0 1-.343-.733v-9.9h-4.547a.696.696 0 0 1-.61-.392l-1.1-2.2c-.025-.098.048-.22.17-.22h13.861c.147 0 .342.147.342.342Z"></path><path fill="#148EFF" stroke="none"
+                            d="M134.805 16.003c0-.978.782-1.785 1.784-1.785.978 0 1.785.807 1.785 1.785 0 .978-.782 1.785-1.785 1.785a1.778 1.778 0 0 1-1.784-1.785Z"></path><path stroke="none"
+                            d="M192.975 22.187a1.418 1.418 0 1 1-.003-2.837 1.418 1.418 0 0 1 .003 2.837Zm0-2.613a1.197 1.197 0 1 0-.004 2.398 1.197 1.197 0 0 0 .004-2.4v.002Zm.363 2.014-.5-.673h-.173v.673h-.283v-1.634h.586c.425 0 .611.138.611.46a.443.443 0 0 1-.437.477l.545.693-.349.004Zm-.141-1.376a.67.67 0 0 0-.269-.037h-.263v.542h.263c.251 0 .372-.093.372-.294a.237.237 0 0 0-.103-.212v.002Z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="links flex flex-wrap justify-center">
+                <a href="#" class="mx-[10px] font-notoregular text-gray-400 hover:text-white duration-200 uppercase">Careers</a>|<a href="#" class="mx-[10px] font-notoregular text-gray-400 hover:text-white duration-200 uppercase">About</a>|<a href="#" class="mx-[10px] font-notoregular text-gray-400 hover:text-white duration-200 uppercase">Support</a>|<a href="#" class="mx-[10px] font-notoregular text-gray-400 hover:text-white duration-200 uppercase">Contact Us</a>|<a href="#" class="mx-[10px] font-notoregular text-gray-400 hover:text-white duration-200 uppercase">Press</a>|<a href="#" class="mx-[10px] font-notoregular text-gray-400 hover:text-white duration-200 uppercase">Api</a>
+            </div>
+            <div class="socialmedia flex justify-between gap-4">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="hover:fill-white duration-200" width="36px" fill="gray" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" aria-labelledby="blz-icon-title-facebook" viewBox="0 0 48 48" part="icon blz-icon">
+                        <title id="blz-icon-title-facebook">Facebook</title><path stroke="none" d="M42 24.11C42 14.108 33.941 6 24 6S6 14.108 6 24.11C6 33.15 12.582 40.641 21.188 42V29.345h-4.57V24.11h4.57v-3.99c0-4.539 2.687-7.046 6.798-7.046 1.97 0 4.03.354 4.03.354v4.457h-2.27c-2.236 0-2.933 1.396-2.933 2.828v3.397h4.992l-.798 5.235h-4.195V42C35.419 40.641 42 33.15 42 24.11Z"></path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="hover:fill-white duration-200" width="36px" fill="gray" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" aria-labelledby="blz-icon-title-instagram" viewBox="0 0 48 48" part="icon blz-icon">
+                        <title id="blz-icon-title-instagram">Instagram</title><path stroke="none" d="M24 6c-4.889 0-5.502.02-7.421.108-1.916.088-3.225.392-4.37.837A8.823 8.823 0 0 0 9.021 9.02a8.83 8.83 0 0 0-2.076 3.188c-.445 1.145-.75 2.454-.837 4.37C6.021 18.499 6 19.11 6 24s.02 5.502.108 7.421c.088 1.916.392 3.225.837 4.37a8.824 8.824 0 0 0 2.076 3.188c1 1 2.005 1.616 3.188 2.076 1.145.445 2.454.75 4.37.837 1.92.087 2.532.108 7.421.108s5.502-.02 7.421-.108c1.916-.088 3.225-.392 4.37-.837a8.824 8.824 0 0 0 3.188-2.076c1-1 1.616-2.005 2.076-3.188.445-1.145.75-2.454.837-4.37.087-1.92.108-2.532.108-7.421s-.02-5.502-.108-7.421c-.088-1.916-.392-3.225-.837-4.37a8.824 8.824 0 0 0-2.076-3.188 8.83 8.83 0 0 0-3.188-2.076c-1.145-.445-2.454-.75-4.37-.837C29.501 6.021 28.89 6 24 6Zm0 3.243c4.806 0 5.375.019 7.273.105 1.756.08 2.709.373 3.343.62.84.326 1.44.717 2.07 1.346.63.63 1.02 1.23 1.346 2.07.247.634.54 1.588.62 3.343.086 1.898.105 2.467.105 7.273 0 4.806-.019 5.375-.105 7.273-.08 1.756-.373 2.709-.62 3.343a5.575 5.575 0 0 1-1.346 2.07c-.63.63-1.23 1.02-2.07 1.346-.634.247-1.587.54-3.343.62-1.897.086-2.466.105-7.273.105-4.807 0-5.376-.019-7.273-.105-1.755-.08-2.709-.373-3.343-.62a5.574 5.574 0 0 1-2.07-1.346 5.576 5.576 0 0 1-1.346-2.07c-.247-.634-.54-1.587-.62-3.343-.086-1.898-.105-2.467-.105-7.273 0-4.806.019-5.375.105-7.273.08-1.755.373-2.709.62-3.343.326-.84.717-1.44 1.346-2.07.63-.63 1.23-1.02 2.07-1.346.634-.247 1.588-.54 3.343-.62 1.898-.086 2.467-.105 7.273-.105Z"></path><path stroke="none" d="M24 30a6 6 0 1 1 0-12 6 6 0 0 1 0 12Zm0-15.243a9.243 9.243 0 1 0 0 18.486 9.243 9.243 0 1 0 0-18.486Zm11.769-.365a2.16 2.16 0 1 1-4.32 0 2.16 2.16 0 0 1 4.32 0Z"></path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="hover:fill-white duration-200" width="36px" fill="gray" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" aria-labelledby="blz-icon-title-mathematical-double-struck-capital-x" viewBox="0 0 48 48" part="icon blz-icon">
+                        <title id="blz-icon-title-mathematical-double-struck-capital-x">𝕏</title><path stroke="none" d="M27.032 21.551 38.936 8h-2.82l-10.34 11.764L17.521 8H8l12.483 17.791L8 40h2.82l10.914-12.426L30.452 40h9.521M11.838 10.082h4.332L36.114 38.02h-4.333"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="slogan flex flex-wrap tablet:flex-row mobile:flex-col">
+                <span class="text-gray-300 mobile:text-center">All games, one app:</span><a href="#" class="ml-2 text-[#009dff] font-notoregular underline underline-offset-2 hover:text-blue-400 duration-200"><img class="w-[14px] mr-1 inline-block" src="./dist/icons/battlenet-nexus-color.svg" alt=""></img>Battle.net Desktop App</a>
+            </div>
+            <div class="license text-center">
+                <p class="text-center text-gray-400 text-sm">©2023 Blizzard Entertainment, Inc.</p>
+                <p class="text-center text-gray-400 text-sm">All<a href="#" class="mx-1 text-gray-300 underline underline-offset-2 inline-block hover:text-white duration-200">trademarks</a>referenced herein are the properties of their respective owners.</p>
+                <div class="links mobile:mt-4">
+                <a href="#" class="mx-[10px] font-notoregular text-gray-400 text-xs hover:text-white duration-200 uppercase">Privacy</a>|<a href="#" class="mx-[10px] font-notoregular text-gray-400 text-xs hover:text-white duration-200 uppercase">Legal</a>|<a href="#" class="mx-[10px] font-notoregular text-gray-400 text-xs hover:text-white duration-200 uppercase">Terms</a>|<a href="#" class="mx-[10px] font-notoregular text-gray-400 text-xs hover:text-white duration-200 uppercase">Cookie Policy</a>|<a href="#" class="mx-[10px] font-notoregular text-gray-400 text-xs hover:text-white duration-200 uppercase">Cookie Settings</a>
+                </div>
+            </div>
+        </section>
+        <!-- !Extras -->
+
+    </footer>
+    <!-- !Footer -->
+
+    <!-- To UP Button -->
+    <section class="to_up_button h-[44px] fixed tablet:bottom-10 tablet:right-10 mobile:bottom-4 mobile:right-4 z-50 rounded-md bg-primary">
+        <a href="#top" class="inline-block w-[44px] h-[44px] p-[11px] rounded-md border border-gray-600 hover:border-gray-200 duration-200"><img  class="w-[24px] " src="./dist/icons/Arrow-Up.svg" alt=""></a>
+    </section>
+    <!-- !To UP Button -->
+
+
+    <!-- TW Script -->
+    <script type="text/javascript" src="./tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <!-- !TW Script -->
+
+    <!--Slider Script -->
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <!--!Slider Script -->
+
+    <!-- Banner Slider -->
+    <script>
+        var swiper = new Swiper(".banners", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+    <!-- !Banner Slider -->
+
+</body>
+</html>

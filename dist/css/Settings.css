@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: unset;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: #15171e;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav{
+    width: 100%;
+}
+
+main{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+}
